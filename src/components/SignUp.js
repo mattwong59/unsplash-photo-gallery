@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Link,
         withRouter,
          } from 'react-router-dom';
-
-import * as routes from '../constants/routes';
 import { auth } from '../firebase';
+import * as routes from '../constants/routes';
 
+console.log(auth);
 const SignUpPage = ({history}) =>
     <div>
         <h1>SignUp</h1>
@@ -117,7 +117,7 @@ export default withRouter(SignUpPage);
 export {
     SignUpForm,
     SignUpLink,
-}
+};
 
 
 
