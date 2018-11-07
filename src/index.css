@@ -16,7 +16,19 @@ code {
 
 ul {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   list-style: none;
+}
+
+h1 {
+  text-align: -webkit-center; 
+}
+
+button {
+  padding: 1em;
+  font-size: 14px;
+  border-radius: .7em;
+  margin: 1em;
 }
 
