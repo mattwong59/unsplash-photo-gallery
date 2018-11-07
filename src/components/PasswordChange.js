@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import { auth } from '../firebase';
 
@@ -23,7 +23,7 @@ class PasswordChangeForm extends Component {
         const { passwordOne } = this.state;
 
         auth.doPasswordUpdate(passwordOne)
-            .then(()) => {
+            .then(() => {
                 this.setState({ ...INITIAL_STATE });
             })
             .catch(error => {
