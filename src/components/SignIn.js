@@ -7,12 +7,18 @@ import { auth } from '../firebase';
 import * as routes from '../constants/routes';
 
 const SignInPage = ({ history }) => 
-    <div>
+  <div className = 'wrapper'>
+    <div className = 'left'>
         <h1>SignIn</h1>
         <SignInForm history={history} />
         <PasswordForgetLink />
         <SignUpLink />
     </div>
+    <div className = 'right'>
+      <h1>Catchy Promo</h1>
+      
+    </div>
+  </div>
 
 const byPropKey = (propertyName, value) => () => ({
     [propertyName]: value,
