@@ -9,7 +9,7 @@ import * as routes from '../constants/routes';
 const SignInPage = ({ history }) => 
   <div className = 'wrapper'>
     <div className = 'left'>
-        <h1>SignIn</h1>
+        <h1>Sign In</h1>
         <SignInForm history={history} />
         <PasswordForgetLink />
         <SignUpLink />
