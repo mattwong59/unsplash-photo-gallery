@@ -16,7 +16,7 @@ const SignInPage = ({ history }) =>
     </div>
     <div className = 'right'>
       <h1>Catchy Promo</h1>
-      
+
     </div>
   </div>
 
@@ -71,19 +71,31 @@ class SignInForm extends Component {
         email === '';
   
       return (
-        <form onSubmit={this.onSubmit}>
-          <input
-            value={email}
-            onChange={event => this.setState(byPropKey('email', event.target.value))}
-            type="text"
-            placeholder="Email Address"
-          />
-          <input
-            value={password}
-            onChange={event => this.setState(byPropKey('password', event.target.value))}
-            type="password"
-            placeholder="Password"
-          />
+        <form className="signIn"onSubmit={this.onSubmit}>
+          <div className="text-label">
+            <label>
+              Email or Username
+            </label>
+            <input
+              className="text-input"
+              value={email}
+              onChange={event => this.setState(byPropKey('email', event.target.value))}
+              type="text"
+              placeholder="Email Address"
+            />
+          </div>
+          <div className="text-label">
+            <label>
+              Password
+            </label>          
+            <input
+              className="text-input"
+              value={password}
+              onChange={event => this.setState(byPropKey('password', event.target.value))}
+              type="password"
+              placeholder="Password"
+            />
+          </div>
           <button disabled={isInvalid} type="submit">
             Sign In
           </button>
