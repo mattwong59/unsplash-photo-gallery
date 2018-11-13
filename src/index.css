@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #222f3e;
   color: #fff;
@@ -48,6 +52,7 @@ a {
 
 .right {
   flex: 1;
+  background: #feca57;
 }
 
 .signIn {
@@ -75,18 +80,45 @@ a {
   margin-bottom: 1.3rem;
   border-radius: 2px;
   background: #222f3e;
-  border: 2px solid #555;
+  border: 1px solid #334860;
   color: #ccc;
   padding: 0.5rem 1rem;
   line-height: 1.3rem;
 }
 
+.signIn .primary-btn {
+  width: 80%;
+}
 
-
-button {
-  padding: 1em;
-  font-size: 14px;
-  border-radius: .7em;
+.primary-btn {
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  height: 2.7rem;
+  border-radius: 2px;
+  font-weight: 500;
+  background: #fa8231;
+  color: #fff;
+  border: 0;
   margin: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.primary-btn:hover {
+  background-color: #f89d60
+}
+
+/* Media Queries */
+
+@media(min-width: 1200px) {
+  .left {
+    flex: 4;
+  }
+
+  .right {
+    flex: 6;
+  }
 }
 
