@@ -52,7 +52,7 @@ a {
 
 .right {
   flex: 1;
-  background: #feca57;
+  background-image: linear-gradient(#222f3e, #fa8231, #222f3e);
   display: flex;
   flex-direction: column;
   justify-content: center;
