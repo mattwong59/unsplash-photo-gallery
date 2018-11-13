@@ -95,6 +95,11 @@ a {
   width: 80%;
 }
 
+.no-account {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Buttons */
 
 .primary-btn {
