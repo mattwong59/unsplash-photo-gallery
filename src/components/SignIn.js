@@ -16,7 +16,9 @@ const SignInPage = ({ history }) =>
     </div>
     <div className = 'right'>
       <h1>Catchy Promo</h1>
-
+      <button className="secondary-btn">
+        Start a FREE 2 week trial
+      </button>
     </div>
   </div>
 

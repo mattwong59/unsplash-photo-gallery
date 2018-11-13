@@ -53,6 +53,11 @@ a {
 .right {
   flex: 1;
   background: #feca57;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .signIn {
@@ -90,6 +95,8 @@ a {
   width: 80%;
 }
 
+/* Buttons */
+
 .primary-btn {
   padding: 0.7rem 1rem;
   font-size: 0.9rem;
@@ -108,6 +115,30 @@ a {
 
 .primary-btn:hover {
   background-color: #f89d60
+}
+
+.secondary-btn {
+  padding: 0.7rem 1rem;
+  margin: 0 0.7rem;
+  font-size: 0.9rem;
+  height: 2.7rem;
+  width: 90%;
+  border-radius: 2px;
+  font-weight: 500;
+  background: none;
+  color: #fff;
+  border: 1px solid #f3f3f3;
+  margin: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.secondary-btn:hover {
+  border-color: #f89d60;
+  color: #f89d60;
+
 }
 
 /* Media Queries */

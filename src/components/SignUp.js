@@ -109,7 +109,7 @@ const SignUpLink = () =>
     <p>
         Don't have an account?
         {' '}
-        <Link to={routes.SIGN_UP}>Sign Up</Link>
+        <Link to={routes.SIGN_UP} className="secondary-btn">Sign Up</Link>
     </p>
 
 export default withRouter(SignUpPage);
