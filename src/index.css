@@ -177,3 +177,13 @@ a {
   }
 }
 
+@media(max-width: 600px) {
+  .wrapper {
+    flex-direction: column
+  }
+
+  body {
+    overflow: auto;
+  }
+}
+
