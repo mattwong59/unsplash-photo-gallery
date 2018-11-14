@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouer, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import AuthUserContext from "./AuthUserContext";
 import { firebase } from '../firebase';
