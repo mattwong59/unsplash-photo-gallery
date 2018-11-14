@@ -34,6 +34,23 @@ h1 {
 
 a {
   color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.or {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.or .bar {
+  flex: auto;
+  border: none;
+  height: 1px;
+  background: #aaa;
 }
 
 .wrapper {
@@ -98,6 +115,8 @@ a {
 .no-account {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
+  width: 64%;
 }
 
 /* Buttons */
