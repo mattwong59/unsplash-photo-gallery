@@ -11,6 +11,7 @@ import SignInPage from './SignIn';
 import PasswordForgetPage from './PasswordForget';
 import HomePage from './Home';
 import AccountPage from './Account';
+import AdminPage from './Admin';
 
 import * as routes from '../constants/routes';
 
@@ -45,6 +46,10 @@ const App = () =>
         <Route
           exact path={routes.ACCOUNT}
           component={AccountPage}
+        /> 
+        <Route
+          exact path={routes.ADMIN}
+          component={AdminPage}
         />                  
       </div>
     </Router>
